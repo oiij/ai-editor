@@ -7,20 +7,30 @@ Features:
 
 # Usage
 
-### 本地包测试
-
-当前目录下执行：
+### 安装
 
 ```bash
-pnpm link --global --dir=./
+pnpm add @oiij/ai-editor
 ```
 
-目标目录：
+### 使用
 
-```bash
+```vue
+<script setup lang="ts">
+import { useAiEditor } from '@oiij/ai-editor'
+const { domRef } = useAiEditor()
+</script>
+
+<template>
+  <div ref="domRef" style="width: 100%; height: 100%;" />
+</template>
+```
+
 pnpm link --global <package name>
+
 ```
 
 ## License
 
 MIT
+```
